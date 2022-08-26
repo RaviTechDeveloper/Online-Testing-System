@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Question Form</title>
+    <!-- CSS only -->
+
     <style>
         h1{
             color: white;
            background-color: royalblue;
             margin :auto; 
-            /* padding: 23px; */
+            /* padding: 23px; */    
         }
         div{
             background-color: powderblue;
@@ -22,7 +24,7 @@
 <body>
     <h1>New Question Form</h1>
     <form action="http://localhost:8000/OTS/save_question/" method="post">
-        {% csrf_token %}
+                {% csrf_token %}
         <div class="titel">Question Statement</div>
         <div class="data"><textarea name="question"></textarea></div>
         <div class="title">Option a</div>
@@ -39,9 +41,13 @@
            <option value="b">b</option>
            <option value="c">c</option>
            <option value="d">d</option>
+           <!-- JavaScript Bundle with Popper -->
+
            
         </select></div>
         <div><input type="submit" value="Save"></div>
     </form>
+    <!-- JavaScript Bundle with Popper -->
+        
 </body>
 </html>

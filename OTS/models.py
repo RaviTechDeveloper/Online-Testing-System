@@ -9,3 +9,10 @@ class Question(models.Model):
     optionc=models.CharField(max_length=100)
     optiond=models.CharField(max_length=100)
     answer=models.CharField(max_length=1)
+
+
+class User(models.Model):
+    username=models.CharField(max_length=20,primary_key=True)  
+    password=models.CharField(max_length=20) 
+    role=models.CharField(max_length=20)
+    realname=models.CharField(max_length=40)
